@@ -71,7 +71,7 @@ export const signoutUser = () => {
 
 // This code how can we using redux promise instead of redux thunk
 export const fetchMessage = () => {
-  const request = axios.get(ROOT_URL, {
+  const request = axios.get(`${ROOT_URL}/secret`, {
     headers: { authorization: localStorage.getItem('token') }
   });
   return {
