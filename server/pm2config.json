@@ -1,0 +1,15 @@
+{
+  "apps": [
+    {
+      "name": "auth",
+      "script": "app.js",
+      "watch": ["routes", "controller", "models", "app.js"],
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "log_date_format": "MM-DD-YYYY HH:mm Z",
+      "error_file": "logs/auth_err.log",
+      "out_file": "logs/auth_out.log"
+    }
+  ]
+}
